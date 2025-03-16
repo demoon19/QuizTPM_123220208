@@ -24,25 +24,21 @@ class _DetailPageState extends State<DetailPage> {
           children: [
             const SizedBox(height: 16),
 
-            // ✅ Menampilkan judul berita
             Text(
               widget.newsItem.title,
               style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             
             const SizedBox(height: 10),
-            // ✅ Menampilkan gambar berita
             Image.network(widget.newsItem.image, height: 200, width: double.infinity, fit: BoxFit.cover),
             
             const SizedBox(height: 10),
-            // ✅ Menampilkan deskripsi berita
             Text(
               widget.newsItem.description,
               style: const TextStyle(fontSize: 16),
             ),
 
             const SizedBox(height: 20),
-            // ✅ Menampilkan jumlah likes
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
